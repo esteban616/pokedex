@@ -1,0 +1,196 @@
+.pokeontainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+   gap: 1em;
+   justify-content: center;
+}
+
+.pokecard{
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    border: 0.5em solid currentColor;
+    cursor: pointer;
+    transition: transform 0.7s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.pokecard:hover{
+    transform: scale(1.03);
+}
+.pokecard_header{
+    aspect-ratio: 2;
+    position: relative;
+    background-color:currentColor;
+}
+.pokecard_img{
+    position: absolute;
+    width: 60%;
+    bottom: -3em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pokecard_body{
+    padding-top:3em;
+
+}
+.pokecard_name{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+.pokecard_types{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    color: black;
+}
+
+.pokecard_types_item{
+    text-transform: capitalize;
+    position: relative;
+}
+.pokecard_types_item::before{
+    content: "/";
+    position: absolute;
+    left: -1em;
+}
+.pokecard_types_item:first-child::before{
+    content: "";
+}
+.pokecard_stats{
+    padding: 0.5em 0.5em 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    gap: 1em 0.2em;
+}
+.pokecard_stats_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.pokecard_stats_label{
+    opacity: 0.5;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7rem;
+    color: black;
+}
+.pokecard_stats_value{
+    font-size: 1.1rem;
+}
+
+.normal{
+    color: #bfb199;
+}
+.bg_normal{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(191,177,153,1) 0%, rgba(250,195,112,1) 100%);
+}
+
+.fighting{
+    color: #f22202;
+}
+.bg_fighting{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(242,34,2,1) 0%, rgba(170,134,124,1) 100%);
+}
+
+.poison{
+    color: rgb(72,0,166);
+}
+.bg_poison{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(122,0,179,1) 100%, rgba(115,26,232,1) 100%)
+}
+.ground{
+    color: #543100;
+}
+.bg_ground{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(84,49,0,1) 0%, rgba(133,80,0,1) 100%)
+}
+.rock{
+    color: #341e52;
+}
+.bg_rock{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(52,30,82,1) 0%, rgba(130,125,99,1) 100%);
+}
+.bug{
+    color:#23521e;
+}
+.bg_bug{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(35,82,30,1) 0%, rgba(99,130,113,1) 100%);
+}
+.ghost{
+    color: #000;
+}
+.bg_ghost{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(0,0,0,1) 0%, rgba(150,123,217,1) 100%)
+}
+.steel{
+    color: #626262;
+}
+.bg_steel{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(98,98,98,1) 0%, rgba(75,69,89,1) 100%)
+}
+
+.fire{
+    color: #ff4304;
+}
+.bg_fire{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(255,67,4,1) 0%, rgba(150,28,28,1) 100%);
+
+}
+.water{
+    color:#23b1fa ;
+}
+.bg_water{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(35,177,250,1) 0%, rgba(33,63,191,1) 100%);
+}
+.grass{
+    color: #4af775;
+}
+.bg_grass{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(74,247,117,1) 0%, rgba(3,140,79,1) 100%);
+}
+.electric{
+    color: #e5f51e;
+}
+.bg_electric{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(229,245,30,1) 0%, rgba(48,63,102,1) 100%);
+
+}
+.psychic{
+    color:#504485 ;
+}
+.bg_psychic{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(80,68,133,1) 0%, rgba(237,235,40,1) 100%);
+}
+
+.ice{
+    color: #233beb;
+}
+.bg_ice{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(35,59,235,1) 0%, rgba(86,194,217,1) 100%);
+}
+.dragon{
+    color: #770600;
+}
+.bg_dragon{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(119,6,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.dark{
+    color: #000;
+}
+.bg_dark{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(0,0,0,1) 0%, rgba(142,141,141,1) 100%);
+}
+.fairy{
+    color: #e98af5;
+}
+.bg_fairy{
+    background: linear-gradient(180deg, rgba(72,0,166,1) 0%, rgba(233,138,245,1) 0%, rgba(58,40,71,1) 100%);
+}

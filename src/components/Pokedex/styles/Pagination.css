@@ -1,0 +1,20 @@
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 1em;
+}
+.pagination_btn{
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 0.3s ease;
+}
+.pagination_btn:hover{
+    background-color:  #DD1A1A;
+    color: white;
+}

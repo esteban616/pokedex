@@ -1,0 +1,203 @@
+.pokeN_data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    gap: 4em;
+}
+.pokeN_info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    max-width: 1024px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 5em;
+}
+
+.pokeN_header{
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+
+.pokeN_img{
+    position: absolute;
+    width: 40%;
+    max-width: 200px;
+    bottom: 0em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pokeN_dataG{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+.pokeN_number{
+    align-self: center;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.pokeN_name {
+   display: flex;
+   justify-content: center;
+   gap: 1em;
+   text-transform: capitalize;
+}
+
+.pkeN_hr{
+    width: 35%;
+    height: 0;
+    align-self: center;
+    opacity: 0.3;
+}
+
+.pokeN_size{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.pokeN_size li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.pokeN_size_label{
+    font-size: 0.6rem;
+    opacity: 0.5;
+}
+.pokeN_size_value{
+    font-size: 0.8rem;
+}
+.pokeN_type-abilities{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.2em;
+}
+.pokeN_type-abilities-items{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+.pokeN_type-abilities-items h3{
+    margin-bottom: 1em;
+}
+.pokeN_type-items{
+    display: flex;
+    gap: 0.3em;
+}
+.pokeN_type{
+    background-color: currentColor;
+    width: 100%;
+    max-width: 120px;
+    text-align: center;
+    padding: 0.4em;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.pokeN_type-info{
+    color: white;
+    text-transform: capitalize;
+}
+
+.pokeN_abilities-items{
+    display: flex;
+    gap: 0.5em;
+}
+.pokeN_ability{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 0.4em;
+    text-align: center;
+    width: 100%;
+    max-width: 130px;
+    text-transform: capitalize;
+}
+
+.pokeN_stats_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1em;
+    margin-top: 1em;
+    width: 100%;
+    max-width: 1000px;
+    position: relative;
+    padding: 3em;
+
+}
+
+.pokeN_stats{
+    display: flex;
+    gap: 0.5em;
+}
+.pokeN_stats hr{
+    width: 75%;
+    height: 0;
+    align-self: center;
+    text-align: center;
+    opacity: 0.3;
+}
+
+.pokeN_imgS{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    transform: rotate(30deg);
+    opacity: 0.3;
+}
+
+.pokeN_stats_list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.pokeN_stats-item{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.pokeN_bar{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 100%;
+    height: 20px;
+    background-color: whitesmoke;
+}
+
+.pokeN_percent{
+    background: rgb(221,255,225);
+    background: linear-gradient(103deg, rgba(221,255,225,1) 0%, rgba(80,224,92,1) 49%, rgba(11,102,4,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    height: 20px;
+}
+
+.poneN_movements-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    padding: 3em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.pokeN_moves{
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.pokeN_moves-item{
+    text-align: center;
+    text-transform: capitalize;
+    background-color: whitesmoke;
+    padding: 0.7em;
+    border-radius: 2em;
+}
